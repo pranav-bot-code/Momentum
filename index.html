@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Momentum</title>
     <style>body{
-        height:100%
+        height:100%;
+        min-height: calc(100vh - 90px);
     } .background {
         background-color: #272743;
         bottom: 8px;
         display: block;
         height: 75px;
+        color: white;
     }
     .elements{
         margin-top: 2px;
@@ -51,17 +53,15 @@
       * {
         margin: 0;
     }
-    html, body {
-        height: 100%;
+    body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
     }
-    .wrapper {
-        min-height: 100%;
-        height: auto !important;
-        height: 100%;
-        margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
-    }
-    .footer, .push {
-        height: 142px; /* .push must be the same height as .footer */
+    
+    .spacer {
+        flex: 1;
     }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -71,25 +71,25 @@
 <body>
     <nav class=" background navbar navbar-expand-lg navbar-light bg-light ">
         <div class="background container-fluid">
-            <a class="navbar-brand" href="index.html">Logo</a>
+            <a class="navbar-brand" href="index.html" style="color: white;">Logo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="elements collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+                    <a class="nav-link active" aria-current="page" href="about.html" style="color: white;">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="help.html">Support</a>
+                    <a class="nav-link active" aria-current="page" href="help.html" style="color: white;">Support</a>
                 </li>   
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="discord.gg/nP7AYg43j8">Discord</a>
+                    <a class="nav-link active" aria-current="page" href="www.www.discord.gg/nP7AYg43j8" style="color: white;">Discord</a>
                 </li>       
             </div>
         </div>
     </nav>
-    <div class="mainleft">
+    <div class="mainmain"><div class="mainleft">
         <h4>Momentum A......</h2>
         <h6>Idk What to write here</h4>
     </div>
@@ -101,12 +101,14 @@
         <h4>Another good thing about the game</h2>
         <h6>elaborate again for like 10-20 words</h4>
     </div>
+</div>
+    <div class="spacer"></div>
     <div class="footermy wrapper">
         <a href="index.html" class="footer-logo-1"><h3 class="footer-logo" href="main.html">Logo</h3></a>
         <ul class="footer-list">
             <li href="about.html">About</li>
             <li href="help.html">Support</li>
-            <li href="discord.gg/nP7AYg43j8">Discord</li>
+            <li href="www.www.discord.gg/nP7AYg43j8">Discord</li>
         </ul>
         <div class="push"></div>
     </div>
